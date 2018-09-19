@@ -1,0 +1,109 @@
+ /* 
+	Lab 1
+	City of Cleveland
+	George Agabon
+	
+	File Name: AboutCle.css
+	
+	*/
+ 
+ header
+ {
+	 text-align: center;
+	 background-color: light green;
+	 
+ }
+ 
+ rcorners{
+	 border-radius: 25px;
+	 border: 2px solid #73AD21;
+	 padding: 20px;
+	 width: 200px
+	 height: 150px
+ }
+ 
+ img {
+	 max-width: 100%;
+ }
+ 
+ h1
+{color: green;
+
+}
+
+h2{
+	text-shadow: 2px 2px red;
+}
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 81.9%;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	clear: none;
+	float: none;
+	min-height: 100%;
+}
+
+ div
+ {
+     background-color: lightblue; 
+	 border-radius: 25px;
+	 border: 2px solid #73AD21;
+    
+ }
+
+ #diffDiv
+ {
+     background-color: green
+ }
+ 
+
+ footer{
+     font-size: 12pt;
+	 text-align: center;
+	 margin-top: 4%;
+	 border-top: 3px outset #cf7b79;
+ }
+ 
+ ul {
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+	 overflow: hidden;
+	 background-color: #f3f3f3;
+ }
+ 
+ li {
+	 float: left;
+ }
+ 
+ li a {
+	 display: block;
+	 color: red;
+	 text-align: center;
+	 padding: 14px 16px;
+	 text-decoration: none; 
+ }
+ li a:hover{
+	 background-color: #3399FF;
+ }
+ 
+ #grad{
+	 height:100px
+	 background-color: red;
+	 background-image: (180deg, red, yellow);
+ }
+ 
+ #grad1 {
+    height: 170px;
+    background-color: red; 
+    background-image: linear-gradient(red, yellow); 
+}
+
+
+div#myDiv {
+    -ms-transform: skewX(20deg); 
+    -webkit-transform: skewX(20deg); 
+    transform: skewX(20deg); 
+}
