@@ -2,7 +2,6 @@
 
 console.log("Welcome!");
 
- 
 window.onload = function(){
 
     document.getElementById("main").innerHTML = "Car information here";
