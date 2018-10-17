@@ -1,4 +1,4 @@
-//Assignment 1
+//Lab5 Assignment 1
 
 console.log("Welcome!");
 

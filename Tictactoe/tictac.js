@@ -1,60 +1,128 @@
 /*
+
+//orig code
 window.onload = function(){
 
+    startGame();
+}
 function startGame(){
-    documemt.turn = "X";
+    document.turn ="X";
+
+    setMessage(document.turn + " to start");
 }
 
-function MakeNextMove(box){
+
+function setMessage(msg){
+    document.getElementById("message").innerText=msg;
+}
+
+function MakenextMove(box){
+    if (box.innerText ==""){
     box.innerText = document.turn;
+    switchTurn();
+    }
+    else{
+        setMessage("Pick another box");
+     }
 }
 
-
-function ResetBoard(){
-
+function switchTurn(){
+    if (document.turn == "X"){
+        document.turn ="O";       
+    }
+    else{
+        document.turn ="X";
+    }
+    setMessage("It's " + document.turn + " turn");
 }
 
-function CheckWinner(){
-
+function checkWinner(move){
+    var result = false;
+    if(checkRow(0,1,2, move) ||
+       checkRow(3,4,5, move) ||
+       checkRow(6,7,8, move) ||
+       checkRow(0,3,6, move) ||
+       checkRow(1,4,7, move) ||
+       checkRow(2,5,8, move) ||
+       checkRow(0,4,8, move) ||
+       checkRow(2,4,6, move)){
+    result = true;
+    }
+    return result;
 }
 
-function SetGameStatus(){
-
+function checkRow(a, b, c, move){
+    var result = false;
+    if (getBox(a) == move && getBox(b) == move && getBox(c) == move){
+        result = true;
+    }
+    return result;
 }
 
-
-
-} //end of onload
-
+function getBox(number){
+    return document.getElementById("b" + number).innerText;
+}
 */
 
-var startingBoard;
-const mePlayer = "X";
-const compPlayer = "O";
-const winnCombi =[
-    [0,1,2],
-    [3,4,5],
-    [6,7,8],
-    [0,3,6],
-    [1,4,7],
-    [2,5,8],
-    [0,4,8],
-    [6,4,2]
-]
 
-const box = document.querySelectorAll(".box");
-startResetGame();
+window.onload = function(){
 
-function startResetGame(){
-    //document.querySelector(".gameover").style.display = " ";
-    startingBoard=Array.from(Array(9).keys());
-    
-    for (var i = 0; i<box.length; i++){
-        box[i] = innerText = " ";
-        box[i].addEventListener("click", turnClick, false);
-    }
+    startGame();
+}
+function startGame(){
+    document.turn ="X";
+
+    setMessage(document.turn + " to start");
 }
 
-function turnClick(square){
-    turn(square.target.id,mePlayer )
+
+function setMessage(msg){
+    document.getElementById("message").innerText=msg;
+}
+
+function MakenextMove(box){
+    if (box.innerText ==""){
+    box.innerText = document.turn;
+    switchTurn();
+    }
+    else{
+        setMessage("Pick another box");
+     }
+}
+
+function switchTurn(){
+    if (document.turn == "X"){
+        document.turn ="O";       
+    }
+    else{
+        document.turn ="X";
+    }
+    setMessage("It's " + document.turn + " turn");
+}
+
+function checkWinner(move){
+    var result = false;
+    if(checkRow(0,1,2, move) ||
+       checkRow(3,4,5, move) ||
+       checkRow(6,7,8, move) ||
+       checkRow(0,3,6, move) ||
+       checkRow(1,4,7, move) ||
+       checkRow(2,5,8, move) ||
+       checkRow(0,4,8, move) ||
+       checkRow(2,4,6, move)){
+    result = true;
+    }
+    return result;
+}
+
+function checkRow(a, b, c, move){
+    var result = false;
+    if (getBox(a) == move && getBox(b) == move && getBox(c) == move){
+        result = true;
+    }
+    return result;
+}
+
+function getBox(number){
+    return document.getElementById("b" + number).innerText;
 }
