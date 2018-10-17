@@ -1,4 +1,6 @@
+//Lab 5
 //Assignment 2
+
 //create array of 10 cars using json in javascript
 
    var jsonCars =[{"year" : 2017, "make" : "Honda", "model" : "Accord","vin number" : 56485135876,
