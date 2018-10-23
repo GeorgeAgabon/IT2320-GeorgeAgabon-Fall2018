@@ -1,0 +1,19 @@
+Using jQuery:
+
+
+
+1. Create 4 divs, each 100px by 100px (not tables)
+
+2. Using jquery add css class to the above divs so that they are aligned to be next to each other in a row
+
+3. Using jquery, assign style to these divs so that every other div is black (like the chess board).
+
+4. Using jquery, set the innerHTML for all these to the value of their Id. Cell 1 should show 1 and so on.
+
+5. Using jquery, append the 4 divs to the "main" div.
+
+6. Attach a "click" event to the button "chgColor". When this button is clicked any div that has "black" background should change to "green"
+
+7. Attach a "click" event to the button "chgText". When this button is clicked all divs should change the content from id to "div"+id
+
+ie cell 1 should show Div1 instead of 1.
