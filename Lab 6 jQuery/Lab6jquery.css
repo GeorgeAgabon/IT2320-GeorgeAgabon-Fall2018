@@ -1,4 +1,4 @@
- 
+
 .header{
 
     background-color: rgb(117, 218, 236);
@@ -7,7 +7,6 @@
 }
 
 #main div{
-
     height: 100px;
     width: 100px;
     color: red;
@@ -16,7 +15,6 @@
     background-color: none;
     border: solid 1px black;
     margin-top: 20px;
-
 }
  
     

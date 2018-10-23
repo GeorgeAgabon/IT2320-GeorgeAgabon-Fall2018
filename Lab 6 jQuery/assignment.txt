@@ -1,7 +1,6 @@
 Using jQuery:
 
 
-
 1. Create 4 divs, each 100px by 100px (not tables)
 
 2. Using jquery add css class to the above divs so that they are aligned to be next to each other in a row

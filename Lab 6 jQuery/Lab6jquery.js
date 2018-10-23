@@ -20,9 +20,6 @@ $("#main").append(div);
 var div = $("<div></div>").text("4");
 $("#main").append(div);
 
-
-
-
 //2. to align divs in a row    =working       
         $("#main div").css({"display": "inline-block"});
 
@@ -42,7 +39,7 @@ $("#main").append(div);
 
    });
 
-   //7. change div text on click of "Change Text"   = working
+//7. change div text on click of "Change Text"   = working
 
     $("#chgText").click(function(){
          $("#S1").prepend("div");
