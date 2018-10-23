@@ -1,0 +1,25 @@
+ 
+.header{
+
+    background-color: rgb(117, 218, 236);
+    color: black;
+    width: 500px;
+}
+
+#main div{
+
+    height: 100px;
+    width: 100px;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    background-color: none;
+    border: solid 1px black;
+    margin-top: 20px;
+
+}
+ 
+    
+
+
+ 

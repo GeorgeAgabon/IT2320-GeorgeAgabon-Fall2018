@@ -1,0 +1,47 @@
+.header{
+    background-color: rgb(117, 218, 236);
+    color: black;
+    width: 400px;
+}
+
+#main div{
+
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: solid 1px black;
+
+}
+
+.jqdiv{
+
+    display: inline-block;
+
+}
+
+#div1{
+
+    color: white;
+     
+}
+
+#div2{
+
+ 
+    border-bottom: solid black;
+    border-top: solid black;
+}
+
+#div3{
+
+    color: white;
+}
+
+#div4{
+
+  
+    border-bottom: solid black;
+    border-top: solid black;
+    border-right: solid black;
+}
+ 

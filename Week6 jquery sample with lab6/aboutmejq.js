@@ -10,7 +10,7 @@
 
 
 
-//3. All jQuery content will go inside the $(document).ready({}) secton
+//3. All jQuery content will go inside the $(document).ready({}) section
 
 
 
@@ -50,7 +50,7 @@ document.getElementsByClassName()
 
 
 
-alert("hello");
+//alert("hello");
 
 
 
@@ -66,7 +66,7 @@ $(function(){
 
     console.log(header);
 
-    $("#header").text("header");
+    $("#header").text("Cleveland");
 
     
 
@@ -94,7 +94,7 @@ $(function(){
 
         $("#header").hide();
 
-        $("#getText").val(20);
+        //$("#getText").val(20);
 
     });
 
@@ -128,12 +128,12 @@ $(function(){
 
     $("#header").after(para);//appending an element
 
-    $("#header").append("hello");//appending text
+    $("#header").append("hello");//appending text        this adds AFTER the header
 
-    $("#header").prepend("hello");//appending text
+    //$("#header").prepend("hello");//appending text       this adds BEFORE the header
 
 
-
+    //get and set attributes
     console.log($("#header").attr("class"));
 
 

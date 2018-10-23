@@ -57,33 +57,3 @@ function setColor()
     document.getElementById("header").style.color = "red";
 
 }
-
-
-
-
-/*  //this code I copied during lecture
-
-window.onload =function(){
-    //write codes that manipulates DOM
-    var x=serInterval(setStyle, 1000);
-
-    document.getElementById("clear").addEventListener("click", function(){
-        clearInterval(x);
-    });
-
-    setTimeout(setcolor, 5000);
-}
-
-function setStyle()
-{
-    //demo for setInterval -toggle header color every x seconds
-    var header = document.getElementById("header");
-    if(header.style.backgroundColor =="lightblue");
-    header.style.backgroundColor = "lightgreen";
-    else{
-        header.style.backgroundColor ="lightblue";
-    }
-
-}
-
-*/
