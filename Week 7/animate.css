@@ -1,0 +1,59 @@
+section{
+
+    background-color: black;
+
+    margin: 10px;
+
+    width: 400px;
+
+    color: white;
+
+    padding: 10px;
+
+}
+
+
+
+section h1{
+
+    color: lightblue;
+
+    border: solid 1px grey;
+
+}
+
+
+
+.hide{
+
+    display: none;    
+
+}
+
+
+
+#box
+
+{
+
+    background-Color: green;
+
+    border: solid 2px darkgreen;
+
+    position: absolute;   
+
+    width: 500px;
+
+    
+
+}
+
+
+
+.red
+
+{
+
+    background-color: red;
+
+}
