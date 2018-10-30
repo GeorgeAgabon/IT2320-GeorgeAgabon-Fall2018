@@ -43,7 +43,7 @@ $(function(){
 //to move the box to the left
     $("#btnleft").stop().on("click", function(){
         $("#box").animate({
-        left : "0" }, 8000);
+        left : "0" }, 4000);
     });
 
 //to fadeout the box
