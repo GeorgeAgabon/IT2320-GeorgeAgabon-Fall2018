@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Animation           
+        </title>
+        <link rel="stylesheet" type="text/css" href="home.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="home.js"></script>
+    </head>
+    <body>
+        <div id="btnPanel">
+                <button id="btn1">Show Parent</button>
+                <button id="btn2">Show Siblings</button>
+                <button id="btn3">Show Children</button>
+                <button id="btn4">Show Descendants</button>
+                <button id="btn5">Show Ancestors</button>
+                <button id="next">Show Next Sibling</button>
+                <button id="nextAll">Show Next All Siblings</button>
+                <button id="nextUntil">Show in between Siblings</button>
+        </div>
+        <div id="content">
+            Top DIV
+            <article id="container"> 
+                Container is here
+                <h1>Container Heading</h1>            
+                <section id="wrapperSection1" class="wrapper">
+                    <h2>Section 1</h2>
+                    <div id="wrapper1">
+                            <p class="para">This is para 1</p>
+                            <p class="para">This is para 2</p>
+                            <p class="para">This is para 3</p>
+                            <p class="para">This is para 4</p>                        
+                    </div>
+                    <a href="http://www.w3schools.com">W3schools Link</a>
+                    <div id="wrapper2"> Div Wrapper 2
+                        <p>This is a para</p>
+                    </div>
+                </section>
+                <section id="wrapperSection2" class="wrapper">
+                    <h2>Section 2</h2>
+                    <p class="para">This is para 1</p>
+                    <p class="para">This is para 2</p>
+                    <p class="para">This is para 3</p>
+                    <p class="para">This is para 4</p>
+                    <a href="http://www.google.com">Google Link</a>
+                    <div>
+                        <p class="para">This is a para too</p>
+                    </div>
+                </section>
+                <section id="wrapperSection3" class="wrapper">
+                    <h2>Section 3</h2>
+                    <p class="para">This is Section 3 para 1</p>
+                    <p class="para">This is Section 3 para 2</p>
+                    <p class="para">This is Section 3 para 3</p>
+                    <p class="para">This is Section 3 para 4</p>
+                    <div>
+                        <p class="para">This is a para too</p>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </body>
+</html>

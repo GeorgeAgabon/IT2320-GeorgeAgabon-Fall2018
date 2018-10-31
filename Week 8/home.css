@@ -1,0 +1,27 @@
+#container
+
+{
+
+    width: 500px;
+
+    color: purple;
+
+}
+
+
+
+section p, a, div{
+
+    margin-left: 5px;
+    color:navy;
+}
+
+
+
+#content
+
+{
+
+    font-size: 20px;
+
+}
