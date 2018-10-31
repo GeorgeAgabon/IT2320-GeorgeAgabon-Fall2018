@@ -7,6 +7,7 @@ $(function(){
     var div = $("<div></div>").text();
     $("#container").append("<div id='box'></div>");
 
+    
 //to create attributes to the big box
     $("div").css({"height": "400px", 
             "width": "400px",
