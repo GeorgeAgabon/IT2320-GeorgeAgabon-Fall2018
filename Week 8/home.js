@@ -63,7 +63,8 @@ $(function(){
 
     //prevUntil
     $("#prevUntil").on("click", function(){
-        $("#wrapperSection3").prevUntil("#container").css({"color": "blue", "border": "2px solid black" });
+        $("#wrapperSection3").prevUntil("#container").css({"color": "blue", 
+        "border": "2px solid purple"});
     });
     
     // use "find" to do this
@@ -95,8 +96,7 @@ $(function(){
 
     
     
-    
-    //function reset()
+    function reset()
      
     {
     
