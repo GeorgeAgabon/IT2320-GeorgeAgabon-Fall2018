@@ -1,0 +1,104 @@
+.main 
+{
+    width: 500px;
+   
+}
+ 
+
+.row
+{
+    width: 500px;
+}
+
+
+.clear
+{
+    clear: both;
+}
+.cell
+{
+    color: lightgrey;
+    font-weight: bold;
+    float: left;
+    width: 20%;
+    padding: 5px;
+    height: 100px;
+    border: solid 0.5px black;
+    opacity: 25%;
+}
+
+#status
+{
+    background-color: cyan;
+    font-size: 24px;
+    font-weight: bold;
+    width: 450px;
+    text-align: center;
+}
+/*
+[id="0"]
+{
+    background-color: red;
+}
+
+[id="8"]
+{
+    background-color:red;
+}
+[id="1"]
+{
+    background-color: blue;
+}
+[id="9"]
+{
+    background-color:blue;
+}
+[id="2"]
+{
+    background-color: green;
+}
+[id="10"]
+{
+    background-color:green;
+}
+[id="3"]
+{
+    background-color: yellow;
+}
+[id="11"]
+{
+    background-color: yellow;
+}
+[id="4"]
+{
+    background-color:orange;
+}
+[id="12"]
+{
+    background-color:orange;
+}
+[id="5"]
+{
+    background-color: purple;
+}
+[id="13"]
+{
+    background-color: purple;
+}
+[id="6"]
+{
+    background-color: black;
+}
+[id="14"]
+{
+    background-color: black;
+}
+[id="7"]
+{
+    background-color: pink;
+}
+[id="15"]
+{
+    background-color: pink;
+}
+ */
