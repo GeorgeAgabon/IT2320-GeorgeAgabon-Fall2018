@@ -1,11 +1,11 @@
-var square = document.getElementsByClassName("box");
+var box = document.getElementsByClassName("box");
 
 window.onload = function(){
         alert("Let's Play Tic Tac Toe!!");
     {  
-        for(var i = 0;i < square.length;i++)
+        for(var i = 0;i < box.length;i++)
         {
-            square[i].addEventListener("click", function()
+            box[i].addEventListener("click", function()
             {
             MakeATurn(this);
             }) 
@@ -15,47 +15,46 @@ window.onload = function(){
     document.getElementById("startResetGame").onclick = ResetBoard;
 
 function ResetBoard(){
-    for(i=0;i<square.length;i++)
+    for(i=0;i<box.length;i++)
         {
-            square[i].innerHTML = "";
+            box[i].innerHTML = "";
 
         document.getElementById("result").innerHTML = "Game on";
         document.getElementById("message").innerHTML = " ";
         }    
     }   
+}
 
-
-function MakeATurn(square)
+function MakeATurn(box)
 {
-    if (square.innerHTML == "")
+    if (box.innerHTML == "")
     {               
-        square.innerHTML = "X";
+        box.innerHTML = "X";
         CheckWinner();
         document.getElementById("result").innerHTML = "Pick a box";
         MakeNextMove();
     }
-    
+
     else
-        {
-            document.getElementById("result").innerHTML = "Pick a box";
-        }  
-     
+    {
+        document.getElementById("result").innerHTML = "Pick a box";
+    }   
 }
 
 function MakeNextMove()
 {
-    for(var i=0;i<square.length;i++)
+    for(var i=0;i<box.length;i++)
     {
-        if(square[i].innerHTML == "")
+        if(box[i].innerHTML == "")
         {
-            square[i].innerHTML = "O";
-            CheckWinner();
-            MakeATurn();
-        }
+        box[i].innerHTML = "O";
+        CheckWinner();
+        MakeATurn();
 
+        }
         else
         {
-            document.getElementById("result").innerHTML = "Pick a box";
+        document.getElementById("result").innerHTML = "Pick a box";
         }   
     }
 }
@@ -90,7 +89,8 @@ function win(a,b,c)
         }
 
         else
-            return;             
+            return;
+                
     }
         
 function SetGameStatus(winner)
@@ -104,4 +104,4 @@ function setMessage()
         document.getElementById("message").innerHTML= "Congratulations!!!";
 
     }
-}
+
