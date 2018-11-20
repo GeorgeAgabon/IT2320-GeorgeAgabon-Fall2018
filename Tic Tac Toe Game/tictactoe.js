@@ -7,7 +7,7 @@ window.onload = function(){
         {
             square[i].addEventListener("click", function()
             {
-            MakeATurn(this);
+            MakeAMove(this);
             }) 
         }
     }
@@ -25,7 +25,7 @@ function ResetBoard(){
     }   
 
 
-function MakeATurn(square)
+function MakeAMove(square)
 {
     if (square.innerHTML == "")
     {               
@@ -36,9 +36,9 @@ function MakeATurn(square)
     }
     
     else
-        {
-            document.getElementById("result").innerHTML = "Pick a box";
-        }  
+    {
+        document.getElementById("result").innerHTML = "Pick a box";
+    }  
      
 }
 
@@ -50,7 +50,7 @@ function MakeNextMove()
         {
             square[i].innerHTML = "O";
             CheckWinner();
-            MakeATurn();
+            MakeAMove();
         }
 
         else
