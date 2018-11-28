@@ -42,14 +42,13 @@ function cellClick(cell)
     var id = $(cell).attr("id");
     
     $(cell).css("background-color", colorArray[id]);
-        counter++;
-        console.log(counter);
+            counter++;
+            console.log(counter);
 
     if(counter == 1)
         {
             console.log("first cell clicked");
             firstCell = $(cell).attr("style");
-            //console.log(firstCell);
         }
 
     if(counter == 2)
