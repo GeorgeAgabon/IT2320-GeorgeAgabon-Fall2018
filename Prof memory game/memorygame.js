@@ -103,4 +103,19 @@ var colorArray = ["red","blue","green","yellow","orange","purple","black","pink"
 
 
     $([id="0"]).css("background-color", "red");
+    $([id="1"]).css("background-color", "blue");
+    $([id="2"]).css("background-color", "green");
+    $([id="3"]).css("background-color", "yellow");
+    $([id="4"]).css("background-color", "orange");
+    $([id="5"]).css("background-color", "purple");
+    $([id="6"]).css("background-color", "black");
+    $([id="7"]).css("background-color", "pink");
+    $([id="8"]).css("background-color", "red");
+    $([id="9"]).css("background-color", "blue");
+    $([id="10"]).css("background-color", "green");
+    $([id="11"]).css("background-color", "yellow");
+    $([id="12"]).css("background-color", "orange");
+    $([id="13"]).css("background-color", "purple");
+    $([id="14"]).css("background-color", "black");
+    $([id="15"]).css("background-color", "pink");
 }) 

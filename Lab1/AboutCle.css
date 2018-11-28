@@ -90,7 +90,7 @@ body {
  }
  
  #grad{
-	 height:100px
+	 height:100px;
 	 background-color: red;
 	 background-image: (180deg, red, yellow);
  }

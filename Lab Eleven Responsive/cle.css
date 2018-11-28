@@ -1,0 +1,490 @@
+ /* 
+	Lab 11 Responsive
+	City of Cleveland
+	George Agabon
+	
+	File Name: cle.css
+	
+	*/
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(233, 208, 107);
+}
+
+.clevlogo{
+    width: 50%;
+    height: 50%;
+}
+
+h1
+    {color: green;
+    font-size: 30px;
+    text-align: center;
+    
+    }
+
+h2{
+    text-shadow: 2px 2px red;
+    text-align:center;
+}
+
+.welcome{
+    color: rgb(39, 9, 8);
+    background-color: rgb(228, 224, 22);
+    font-style: italic ;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darksalmon;
+    }
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: chartreuse;
+}
+li a:hover{
+    background-color: #3399FF;
+    box-shadow: 6px 4px lightslategray;
+}
+
+.home{
+    float: left;
+    padding: 50px;
+    width: 30%;
+    background-color: rgb(228, 184, 210);    
+    margin: 2px;
+    
+}
+
+.mainhome::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.home:hover{
+    background-color: cyan;
+    box-shadow: 6px 4px lightslategray;
+}
+
+.tour{
+    float: left;
+    padding: 50px;
+    width: 100%;
+    background-color: rgb(105, 140, 214);    
+    margin: 5px; 
+}
+
+.maintour::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.tour:hover{
+    background-color: rgb(143, 92, 140);
+    box-shadow: 6px 4px lightslategray;
+}
+
+ .museum{
+    float: left;
+    padding: 50px;
+    width: 100%;
+    background-color: rgb(141, 235, 79);    
+    margin: 5px; 
+
+ }
+
+ .clevmuseum::after{
+    clear: both;
+    content: "";
+    display: table;
+ }
+ 
+
+.histo{
+    float: left;
+    padding: 50px;
+    width: 30%;
+    background-color: rgb(90, 240, 147);    
+    margin: 5px;
+}
+
+.museum:hover{
+    background-color: #ffe600;
+    box-shadow: 6px 4px lightslategray;
+}
+
+.clevhistory::after{
+    clear: both;
+    content: "";
+    display: table;
+
+}
+
+.histo:hover{
+    background-color: #26ff00;
+    box-shadow: 6px 4px lightslategray;
+}
+
+.rocknroll{
+    float: left;
+    padding: 50px;
+    width: 100%;
+    background-color: rgb(141, 235, 79);    
+    margin: 5px; 
+
+ }
+
+ .clevrock::after{
+    clear: both;
+    content: "";
+    display: table;
+ } 
+
+ .rocknroll:hover{
+    background-color: #ffe600;
+    box-shadow: 6px 4px lightslategray;
+}
+ 
+ .public{
+    float: left;
+    padding: 50px;
+    width: 100%;
+    background-color: rgb(25, 247, 55);    
+    margin: 5px; 
+
+ }
+
+ .clevpublic::after{
+    clear: both;
+    content: "";
+    display: table;
+ } 
+
+ .public:hover{
+    background-color: #ffe600;
+    box-shadow: 6px 4px lightslategray;
+}
+ 
+ .westside{
+    float: left;
+    padding: 30px;
+    width: 100%;
+    background-color: rgb(231, 123, 61);    
+    margin: 5px; 
+ }
+
+ .clevwestside::after{
+    clear: both;
+    content: "";
+    display: table;
+ }
+ 
+ .westside:hover{
+    background-color: #91bb8a;
+    box-shadow: 6px 4px lightslategray;
+}
+
+ .park{
+    float: left;
+    padding: 30px;
+    width: 100%;
+    background-color: rgb(33, 153, 17);    
+    margin: 5px; 
+ }
+
+ .clevpark::after{
+    clear: both;
+    content: "";
+    display: table;
+ } 
+
+ .park:hover{
+    background-color: #879984;
+    box-shadow: 6px 4px lightslategray;
+}
+ 
+.place{
+    background-color: beige;
+}
+
+footer{
+    font-size: 14pt;
+    text-align: center;
+    margin-top: 4%;
+    border-top: 3px outset #cf7b79;  
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+
+    .clevlogo{
+        width: 30%;
+        height: 30%;
+    }
+
+    .home{
+
+        width: 100%;
+
+    }
+
+    .tour{
+
+        width: 100%;
+
+    }
+
+    .histo{
+        width: 100%
+    }
+
+    .museum{
+        width: 100%
+    }
+
+    .rocknroll{
+        width: 100%;   
+    
+     }
+
+     .public{
+        width: 100%;
+    
+     }
+
+     .westside{
+        width: 100%;
+    
+     }
+
+     .park{
+        width: 100%;
+    
+     }
+     
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+
+    .home{
+
+        width: 100%;
+
+    }
+
+    .tour{
+
+        width: 100%;
+
+    }
+
+    .histo{
+        width: 100%
+    }
+
+    .museum{
+        width: 100%
+    }
+
+    .rocknroll{
+        width: 100%;   
+    
+     }
+
+     .public{
+        width: 100%;
+    
+     }
+
+     .westside{
+        width: 100%;
+    
+     }
+
+     .park{
+        width: 100%;
+    
+     }
+     
+} 
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+
+    .home{
+
+        width: 40%;
+
+    }
+
+    .tour{
+
+        width: 100%;
+
+    }
+
+    .histo{
+        width: 40%
+    }
+
+    .museum{
+        width: 100%
+    }
+
+    .rocknroll{
+        width: 100%;   
+    
+     }
+
+     .public{
+        width: 100%;
+    
+     }
+
+     .westside{
+        width: 100%;
+    
+     }
+
+     .park{
+        width: 100%;
+    
+     }
+
+} 
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+
+    .home{      
+
+        width: 30%;        
+
+    } 
+
+    .tour{
+
+        width: 100%;
+
+    }
+
+    .histo{
+        width: 30%
+    }
+
+    .museum{
+        width: 100%
+    }
+
+    .rocknroll{
+        width: 100%;   
+    
+     }
+
+     .public{
+        width: 100%;
+    
+     }
+
+     .westside{
+        width: 100%;
+    
+     }
+
+     .park{
+        width: 100%;
+    
+     }
+        
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+
+    .home{       
+
+        width: 30%;        
+
+    } 
+
+    .tour{
+
+        width: 100%;
+
+    }
+
+    .histo{
+        width: 30%
+    }
+
+    .museum{
+        width: 100%
+    }
+
+    .rocknroll{
+        width: 100%;   
+    
+     }
+
+     .public{
+        width: 100%;
+    
+     }
+
+     .westside{
+        width: 100%;
+    
+     }
+
+     .park{
+        width: 100%;
+    
+     }
+     
+}
+
+
