@@ -1,81 +1,65 @@
 var ctx;
-
 var c;
-
 var endAngle = 0.1;
-
 var x= 100;
-
 var animation; 
-
-
 
 window.onload=function(){
 
-
-
     c = document.getElementById("myCanvas");
 
-    ctx = c.getContext("2d");    
-
-
+    ctx = c.getContext("2d");
 
     document.getElementById("path").addEventListener("click",function(){
-
         drawPath();   
-
     });
-
-
 
     document.getElementById("rectangle").addEventListener("click",function(){
-
         drawRectangles();   
-
     });
-
 
 
     document.getElementById("house").addEventListener("click",function(){
-
         drawHouse();
-
     });
 
 
 
     document.getElementById("circle").addEventListener("click",function(){
-
         drawCircle();   
-
     });
-
 
 
     document.getElementById("arc").addEventListener("click",function(){
-
         drawArc();   
-
     });
-
 
 
     document.getElementById("movingCircle").addEventListener("click",function(){
-
         drawMovingCircle();   
-
     });
-
 
 
     document.getElementById("stopAnimation").addEventListener("click",function(){
+        clearInterval(animation);  
+    });
 
-        clearInterval(animation);   
 
+    document.getElementById("randomPath").addEventListener("click",function(){
+        drawrandomPath();  
+    });
+
+
+    document.getElementById("triangle").addEventListener("click",function(){
+        drawTriangle();  
+    });
+
+
+    document.getElementById("roundedSquare").addEventListener("click",function(){
+        drawroundedSquare();  
     });
 
     
-
 }
 
 
@@ -90,32 +74,20 @@ function drawPath()
 
     ctx.resetTransform();
 
-
-
     x=10; y=10;
-
     x1=300; y1=500;
-
-    x2=50; y2=50;
-
-    x3=600; 
-
-
+    //x2=50; y2=50;
+    //x3=600; 
 
     var grad = ctx.createLinearGradient(0,0,1000,1000);
 
     grad.addColorStop(0,"red");
-
     grad.addColorStop(0.2,"blue");
-
     grad.addColorStop(0.4,"green");
-
     grad.addColorStop(0.6,"yellow");
-
     grad.addColorStop(1,"purple");
 
     ctx.strokeStyle=grad;   
-
     ctx.lineWidth=4;
 
     for (i=0;i<6;i++)
@@ -128,9 +100,9 @@ function drawPath()
 
         ctx.lineTo(x1,y1);   
 
-        ctx.lineTo(x2,y1);    
+        //ctx.lineTo(x2,y1);    
 
-        ctx.lineTo(x3,y2);
+        //ctx.lineTo(x3,y2);
 
         ctx.closePath();  
 
@@ -140,11 +112,11 @@ function drawPath()
 
         y1=y1-50;
 
-        x2=x2-10;
+        //x2=x2-10;
 
-        y2=y2+10;
+        //y2=y2+10;
 
-        x3=x3+10;
+        //x3=x3+10;
 
 
 
@@ -349,7 +321,7 @@ function drawArc()
     ctx.lineTo(100,20);          // Create a horizontal line
 
     ctx.arcTo(150,20,150,70,50); // Create an arc
-
+    
     ctx.lineTo(150,120);         // Continue with vertical line
 
     ctx.stroke();                // Draw it
@@ -405,5 +377,95 @@ function drawCircleAnimation()
         ctx.clearRect(0,0,1000,1000);//Reset canvas to blank canvas 
 
     }   
+
+}
+
+
+function drawrandomPath()
+
+{
+
+    ctx.clearRect(0,0,1000,1000);//Reset canvas to blank canvas 
+
+    ctx.resetTransform();
+
+    x=10; y=10;
+    x1=300; y1=500;
+    //x2=50; y2=50;
+    //x3=600; 
+
+    var grad = ctx.createLinearGradient(0,0,1000,1000);
+
+    grad.addColorStop(0,"red");
+    grad.addColorStop(0.2,"blue");
+    grad.addColorStop(0.4,"green");
+    grad.addColorStop(0.6,"yellow");
+    grad.addColorStop(1,"purple");
+
+    ctx.strokeStyle=grad;   
+    ctx.lineWidth=4;
+
+    for (i=0;i<6;i++)
+
+    {
+
+        ctx.beginPath();
+
+        ctx.moveTo(x,y);
+
+        ctx.lineTo(x1,y1);   
+
+        //ctx.lineTo(x2,y1);    
+
+        //ctx.lineTo(x3,y2);
+
+        ctx.closePath();  
+
+        ctx.stroke();
+
+        x1=x1+50;
+
+        y1=y1-50;
+
+        //x2=x2-10;
+
+        //y2=y2+10;
+
+        //x3=x3+10;
+
+
+
+    }
+
+}
+
+
+
+
+function drawroundedSquare()
+
+{
+
+    ctx.clearRect(0,0,1000,1000);//Reset canvas to blank canvas 
+
+    ctx.resetTransform();
+
+    
+
+    ctx.clearRect(0,0,1000,1000);//Reset canvas to blank canvas        
+
+    ctx.beginPath(); 
+
+    ctx.moveTo(60,20);           // Create a starting point
+
+    ctx.lineTo(100,20);          // Create a horizontal line
+
+    ctx.arcTo(150,20,150,70,50); // Create an arc
+    
+    ctx.lineTo(150,120); // Continue with vertical line
+
+    //ctx.arcTo(-150,-20,-150,-70,-50);
+
+    ctx.stroke();                // Draw it
 
 }
