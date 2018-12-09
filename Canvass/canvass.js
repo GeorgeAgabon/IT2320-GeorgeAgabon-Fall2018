@@ -76,8 +76,8 @@ function drawPath()
 
     x=10; y=10;
     x1=300; y1=500;
-    //x2=50; y2=50;
-    //x3=600; 
+    x2=50; y2=50;
+    x3=600; 
 
     var grad = ctx.createLinearGradient(0,0,1000,1000);
 
@@ -100,9 +100,9 @@ function drawPath()
 
         ctx.lineTo(x1,y1);   
 
-        //ctx.lineTo(x2,y1);    
+        ctx.lineTo(x2,y1);    
 
-        //ctx.lineTo(x3,y2);
+        ctx.lineTo(x3,y2);
 
         ctx.closePath();  
 
@@ -112,11 +112,11 @@ function drawPath()
 
         y1=y1-50;
 
-        //x2=x2-10;
+        x2=x2-10;
 
-        //y2=y2+10;
+        y2=y2+10;
 
-        //x3=x3+10;
+        x3=x3+10;
 
 
 
@@ -391,8 +391,8 @@ function drawrandomPath()
 
     x=10; y=10;
     x1=300; y1=500;
-    //x2=50; y2=50;
-    //x3=600; 
+    x2=50; y2=50;
+    x3=600; 
 
     var grad = ctx.createLinearGradient(0,0,1000,1000);
 
@@ -415,9 +415,9 @@ function drawrandomPath()
 
         ctx.lineTo(x1,y1);   
 
-        //ctx.lineTo(x2,y1);    
+        ctx.lineTo(x2,y1);    
 
-        //ctx.lineTo(x3,y2);
+        ctx.lineTo(x3,y2);
 
         ctx.closePath();  
 
@@ -427,11 +427,11 @@ function drawrandomPath()
 
         y1=y1-50;
 
-        //x2=x2-10;
+        x2=x2-10;
 
-        //y2=y2+10;
+        y2=y2+10;
 
-        //x3=x3+10;
+        x3=x3+10;
 
 
 
@@ -463,8 +463,6 @@ function drawroundedSquare()
     ctx.arcTo(150,20,150,70,50); // Create an arc
     
     ctx.lineTo(150,120); // Continue with vertical line
-
-    //ctx.arcTo(-150,-20,-150,-70,-50);
 
     ctx.stroke();                // Draw it
 
