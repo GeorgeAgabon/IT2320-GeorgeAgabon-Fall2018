@@ -51,6 +51,7 @@ $(function(){
        });
     });
 
+    
 // Final Project Part 2 #2
 
 $("#findshelteranimal").on("click", function(){
